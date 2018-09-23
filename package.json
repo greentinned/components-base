@@ -1,0 +1,42 @@
+{
+  "name": "components-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npm run clean && webpack",
+    "dev": "npm run clean && webpack --watch",
+    "clean": "rm -rf build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greentinned/components-base.git"
+  },
+  "keywords": [
+    "components",
+    "base"
+  ],
+  "author": "Sergey K.",
+  "license": "ISC",
+  "peerDependencies": {
+    "bem-react-core": "^2.2.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.11",
+    "bem-react-core": "^2.2.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/greentinned/components-base/issues"
+  },
+  "homepage": "https://github.com/greentinned/components-base#readme"
+}
