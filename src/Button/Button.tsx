@@ -1,9 +1,14 @@
 import { Block } from 'bem-react-core'
 import { withControl, withControlAttrs } from '../Control/Control'
 
+export enum ButtonType {
+  normal = 'normal',
+  accent = 'accent'
+}
+
 export interface Props {
   label: string
-  type: string
+  type: ButtonType
   maxWidth: boolean
 }
 
@@ -14,7 +19,7 @@ class Button extends Block<Props> {
 
   static defaultProps = {
     label: 'Button',
-    type: 'normal',
+    type: ButtonType.normal,
     maxWidth: true
   }
 
